@@ -1,6 +1,6 @@
 # Fit File Parsing for swift
 
-This code provide basic example of parsing Fit Files in swift using [FitFileParser Swift Packate](https://github.com/roznet/FitFileParser)
+This code provide basic example of parsing Fit Files in swift using [FitFileParser Swift Package](https://github.com/roznet/FitFileParser)
 
 It uses the official [Fit SDK](https://www.thisisant.com/resources/fit)
 
