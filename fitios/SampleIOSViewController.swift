@@ -6,8 +6,8 @@
 //
 
 import UIKit
-import RZFitFile
-import RZFitFileTypes
+import FitFileParser
+import FitFileParserTypes
 
 class SampleIOSViewController: UIViewController {
 
@@ -18,7 +18,7 @@ class SampleIOSViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         if let rp = Bundle.main.resourceURL {
             let fp = rp.appendingPathComponent("running.fit")
-            let file = RZFitFile(file: fp)
+            let file = FitFile(file: fp)
             if let msg = file?.messages(forMessageType: FIT_MESG_NUM_RECORD) {
                 self.label.text = "Loaded \(msg.count) records"
             }else{

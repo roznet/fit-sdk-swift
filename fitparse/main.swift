@@ -7,14 +7,14 @@
 //
 
 import Foundation
-import RZFitFile
+import FitFileParser
 
 let file = URL(fileURLWithPath: CommandLine.arguments[1])
 
 print( "Parsing \(file.path)" )
 
 let startTime = CFAbsoluteTimeGetCurrent()
-if let fitfile = RZFitFile(file: file) {
+if let fitfile = FitFile(file: file) {
     let timeElapsed = CFAbsoluteTimeGetCurrent() - startTime
     print( "\(fitfile.messages.count) messages in \(timeElapsed) seconds" )
 }else{
