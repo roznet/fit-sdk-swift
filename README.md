@@ -4,13 +4,15 @@ This code provide basic example of parsing Fit Files in swift using [FitFilePars
 
 It uses the official [Fit SDK](https://www.thisisant.com/resources/fit)
 
-It contains a few examples that use the swift package:
+It contains a few examples that show how to use the [swift package](https://github.com/roznet/FitFileParser):
 
-- a small command line example to parse a file. A command line utilities can't use the framework, so you need to compile and like the files.
-- a small iOS app that will link and embed the framework
-- a small macOS app
+- a small command line example to parse a file.
+- a small iOS app that will open sample fit file and count the records
+- a small macOS app that will open a sample fit file and count the records
 
 You can also see an example of integration into the MacOS and iOS apps [FitFileExplorer and ConnectStats](https://github.com/roznet/connectstats).
+
+The open source app [FitFileExplorer](https://itunes.apple.com/us/app/fit-file-explorer/id1244431640?ls=1&mt=12) that uses this library can be especially helpful in exploring the structure of a fit files while working with the package.
 
 ## Approach
 
