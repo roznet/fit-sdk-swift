@@ -18,7 +18,6 @@ It takes the example c code from the official SDK and integrate it into swift to
 
 All the keys and fields are generated from the c structure that are parsed in `fit_convert.c` from the example SDK. The file `fit_example.h` contains all the definition and a script fitconv.py parses that and automatically generate the swift code to build the native swift structures.
 
-When a new SDK is available, after download, the c example should be copied into the sdk directory, and running the `fitconv.py` script will regenerate the swift code.
 
 ## Why?
 
