@@ -2,7 +2,7 @@
 
 This code provide basic example of parsing Fit Files in swift using [FitFileParser Swift Package](https://github.com/roznet/FitFileParser)
 
-It uses the official [Fit SDK](https://www.thisisant.com/resources/fit)
+It uses the official [Fit SDK](https://developer.garmin.com/fit)
 
 It contains a few examples that show how to use the [swift package](https://github.com/roznet/FitFileParser):
 
