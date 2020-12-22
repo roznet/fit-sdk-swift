@@ -7,7 +7,6 @@
 
 import Cocoa
 import FitFileParser
-import FitFileParserTypes
 
 class SampleMacOSViewController: NSViewController {
 
@@ -19,7 +18,7 @@ class SampleMacOSViewController: NSViewController {
         if let rp = Bundle.main.resourceURL {
             let fp = rp.appendingPathComponent("running.fit")
             let file = FitFile(file: fp)
-            if let msg = file?.messages(forMessageType: FIT_MESG_NUM_RECORD) {
+            if let msg = file?.messages(forMessageType: FitMessageType.record) {
                 self.label.stringValue = "Loaded \(msg.count) records"
             }else{
                 self.label.stringValue = "Failed to load"
