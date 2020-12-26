@@ -16,7 +16,8 @@ print( "Parsing \(file.path)" )
 let startTime = CFAbsoluteTimeGetCurrent()
 if let fitfile = FitFile(file: file) {
     let timeElapsed = CFAbsoluteTimeGetCurrent() - startTime
-    print( "\(fitfile.messages.count) messages in \(timeElapsed) seconds" )
+    let timeFormatted = String(format: "%.3f", timeElapsed)
+    print( "Read \(fitfile.messages.count) messages in \(timeFormatted) seconds" )
 }else{
     print( "failed" )
 }

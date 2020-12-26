@@ -718,14 +718,25 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qCE-Qs-CY8">
+                                <rect key="frame" x="222" y="93" width="37" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="WND-ED-uAc">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="SgG-D6-k57" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="Rdj-PV-FDy"/>
+                            <constraint firstItem="qCE-Qs-CY8" firstAttribute="top" secondItem="SgG-D6-k57" secondAttribute="bottom" constant="18" id="fVW-Kf-xRP"/>
                             <constraint firstItem="SgG-D6-k57" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="gnb-A4-1Bk"/>
+                            <constraint firstItem="qCE-Qs-CY8" firstAttribute="centerX" secondItem="SgG-D6-k57" secondAttribute="centerX" id="pjf-ke-j4z"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="label" destination="bOf-5L-p4f" id="dXQ-gd-e0j"/>
+                        <outlet property="secondLabel" destination="qCE-Qs-CY8" id="eLW-Xl-4Zl"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

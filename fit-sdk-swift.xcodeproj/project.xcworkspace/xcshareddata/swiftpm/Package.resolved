@@ -2,11 +2,11 @@
   "object": {
     "pins": [
       {
-        "package": "FitFileparser",
+        "package": "FitFileParser",
         "repositoryURL": "https://github.com/roznet/FitFileParser.git",
         "state": {
           "branch": "main",
-          "revision": "210e36d96b92acde9a88d6852cbfbf3cfc2be308",
+          "revision": "dcac950df4cf33a25fe547ad1751f15edf0455a8",
           "version": null
         }
       }
